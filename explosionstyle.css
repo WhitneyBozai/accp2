@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Full height for the body */
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  background-color: #d9fdf6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Align the content to the top of the screen */
+  align-items: center;      /* Horizontally center the content */
+  padding-top: 20px;        /* Add some padding at the top to prevent it from sticking to the edge */
+}
+
+/* Button container for the Back and Next buttons */
+.button-container {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; /* Add padding on the left and right */
+}
+
+.btn {
+  background-color: #2e3a59;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e2a39; /* Darker background on hover */
+}
+
+/* Main content area */
+main {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* Container for each p5.js sketch */
+#sketch-container-flow, #sketch-container-explosion, #sketch-container-shadow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 80px; /* Increased margin-top to lower the sketch container */
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2e3a59;
+}
+
+/* Footer Styles */
+footer {
+  font-size: 14px;
+  color: #888;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Ensure content fits in smaller screens */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 28px;
+  }
+
+  section h2 {
+      font-size: 24px;
+  }
+
+  section p {
+      font-size: 16px;
+  }
+
+  #sketch-container-flow, #sketch-container-explosion, #sketch-container-shadow {
+      width: 100%;
+      height: 300px;
+      margin-top: 60px; /* Lower the sketch container on smaller screens */
+  }
+}
