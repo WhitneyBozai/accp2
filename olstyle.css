@@ -1,0 +1,111 @@
+/* L&F style.css */
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Full height for the body */
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-color: #d9fdf6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align the content to the top of the screen */
+    align-items: center;      /* Horizontally center the content */
+    padding-top: 20px;        /* Add some padding at the top to prevent it from sticking to the edge */
+}
+
+/* Header Styling */
+header {
+    background-color: #2e3a59; /* Dark background for header */
+    color: #fff; /* White text color for contrast */
+    padding: 20px;
+    width: 100%; /* Make header span the full width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Section (Description) Styling */
+section.description {
+    max-width: 1200px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #2e3a59;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Container for the p5.js sketch */
+#sketch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;  /* Adjust the height as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;  /* Increased margin-top to lower the sketch container */
+}
+
+/* Footer Styles */
+footer {
+    font-size: 14px;
+    color: #888;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ensure content fits in smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    #sketch-container {
+        width: 100%;
+        height: 300px;
+        margin-top: 60px; /* Lower the sketch container on smaller screens */
+    }
+}

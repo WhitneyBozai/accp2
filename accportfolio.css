@@ -1,0 +1,119 @@
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdf0e6;
+  }
+  
+  /* Grid 布局容器 */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "section"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  /* 头部样式 */
+  header {
+    grid-area: header;
+    background-color: #733828; /* 深色背景 */
+    color: white;             /* 白色文字 */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* 导航菜单样式 */
+  nav {
+    grid-area: nav;
+    background-color: #8b5e3c; /* 可选：为导航增加背景色 */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;  /* 每个导航项之间的间距 */
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: orange;  /* 鼠标悬停时的高亮效果 */
+  }
+  
+  /* 内容区域 */
+  section {
+    grid-area: section;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgb(252, 250, 249);
+    margin: 20px auto;
+    max-width: 900px;      /* 最大宽度限制 */
+    border-radius: 8px;    /* 圆角效果 */
+    box-shadow: 0 4px 8px rgba(37, 18, 18, 0.1); /* 阴影 */
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* 页脚 */
+  footer {
+    grid-area: footer;
+    background-color: #733828;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* 响应式设计：当屏幕宽度小于 768px 时 */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;  /* 调整标题大小 */
+    }
+  
+    nav ul {
+      flex-direction: column;  /* 垂直排列导航菜单 */
+    }
+  
+    nav ul li {
+      margin: 10px 0; /* 垂直排列时增加间距 */
+    }
+  
+    section {
+      padding: 20px;
+      margin: 10px;
+    }
+  }
+  
