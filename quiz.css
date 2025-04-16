@@ -1,0 +1,144 @@
+body { 
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url('quizdog3.webp');    
+    background-size: cover;           
+    background-position: center;      
+}
+
+/* ------ Layout ------ */ 
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(216, 250, 209);
+    color: #7f403a;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    z-index: 999; 
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+.container { 
+    display: flex; 
+    justify-content: center; 
+    height: 100vh; 
+    flex-direction: column;
+}
+
+.header {
+    font-size: 40px;
+    height: 20vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #95524d;
+}
+.corgi-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 214px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+  .corgi2-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 384px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.corgi3-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 554px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.corgi4-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 724px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.corgi5-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 894px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.corgi6-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 1064px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.corgi7-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 1234px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.corgi8-gif {
+    width: 149px;              
+    position: absolute;        
+    top: 1404px;                
+    right: 380px;                
+    z-index: 10;               
+  }
+
+.middle { 
+    width: 100vw; 
+    height: 60vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: start;
+    padding-top: 20px;
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 20px;
+}
+
+.question {
+    background-color: #fbfce4;
+    color: #7f403a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    background-color: #fcaa53;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+input[type=submit]:hover {
+    background-color: #fcc624;
+}

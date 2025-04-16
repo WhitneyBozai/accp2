@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Kind of Dog Is Right for You?</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="top-bar">
+    🐾🐾🐾🐾🐾 Puppies！🐾🐾🐾🐾🐾
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>🐾 Come and choose your puppy!</h1>
+    </div>
+
+    <img src="corgi.gif" alt="corgi" class="corgi-gif">
+    <img src="corgi2.gif" alt="corgi2" class="corgi2-gif">
+    <img src="corgi3.gif" alt="corgi3" class="corgi3-gif">
+    <img src="corgi4.gif" alt="corgi4" class="corgi4-gif">
+    <img src="corgi5.gif" alt="corgi5" class="corgi5-gif">
+    <img src="corgi6.gif" alt="corgi6" class="corgi6-gif">
+    <img src="corgi7.gif" alt="corgi7" class="corgi7-gif">
+    <img src="corgi8.gif" alt="corgi8" class="corgi8-gif">
+
+
+    <div class="middle">
+      
+      <form class="quiz-form" id="quizForm">
+       
+       
+        <div class="question">
+          <p>1. What is your living environment like?</p>
+          <label><input type="radio" name="q1" value="poodle"> Small space</label><br>
+          <label><input type="radio" name="q1" value="corgi"> Medium-sized house </label><br>
+          <label><input type="radio" name="q1" value="golden"> Spacious house</label>
+        </div>
+
+        <div class="question">
+          <p>2. How much time can you spend with your dog daily?</p>
+          <label><input type="radio" name="q2" value="golden"> More than 3 hours</label><br>
+          <label><input type="radio" name="q2" value="corgi"> 2-3 hours</label><br>
+          <label><input type="radio" name="q2" value="poodle"> 1-2 hours</label>
+        </div>
+
+        <div class="question">
+          <p>3. What size of dog do you prefer?</p>
+          <label><input type="radio" name="q3" value="poodle"> Small-sized</label><br>
+          <label><input type="radio" name="q2" value="corgi"> Medium-sized</label><br>
+          <label><input type="radio" name="q3" value="golden"> large-sized</label>
+        </div>
+
+        <div class="question">
+          <p>4. How much do you budget for your dog each month?</p>
+          <label><input type="radio" name="q4" value="poodle">$200-300</label><br>
+          <label><input type="radio" name="q4" value="corgi"> $300-500</label><br>
+          <label><input type="radio" name="q4" value="golden"> $500-700</label>
+
+        </div>
+
+        <div class="question">
+          <p>5. What kind of personality do you prefer in a dog?</p>
+          <label><input type="radio" name="q5" value="poodle"> Cute and smart</label><br>
+          <label><input type="radio" name="q5" value="corgi"> Friendly and active </label><br>
+          <label><input type="radio" name="q5" value="golden"> Playful and outgoing</label>
+        </div>
+
+        <div class="question">
+          <p>6. How often do you like to groom your dog?</p>
+          <label><input type="radio" name="q6" value="poodle"> Once each week</label><br>
+          <label><input type="radio" name="q6" value="corgi"> Twice each week</label><br>
+          <label><input type="radio" name="q6" value="golden"> Everyday</label>
+        </div>
+
+        <div class="question">
+          <p>7. Do you have kids or other pets at home?</p>
+          <label><input type="radio" name="q7" value="golden"> No</label><br>
+          <label><input type="radio" name="q7" value="corgi"> Have 1-2 kids/pets</label><br>
+          <label><input type="radio" name="q7" value="poodle"> Have more than 2 kids/pets</label>
+
+        </div>
+
+        <div class="question">
+          <p>8. What vibe do you want from your dog?</p>
+          <label><input type="radio" name="q8" value="corgi"> Fun, silly, and always entertaining</label><br>
+          <label><input type="radio" name="q8" value="poodle"> Loyal, cute, and easy to manage</label><br>
+          <label><input type="radio" name="q8" value="golden"> Beautiful, warm, and relaxing</label>
+        </div>
+
+        <input type="submit" value="Find My Dog Match!">
+        <div id="result" class="result"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
