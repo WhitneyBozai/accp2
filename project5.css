@@ -1,0 +1,81 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+  background: linear-gradient(to bottom, #fdf0f7, #e6f7ff);
+  color: #63072f;
+  text-align: center;
+  padding: 40px;
+}
+
+.decorative-gif {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  width: 250px;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.decorative-gif2 {
+  position: fixed;
+  top: 10px;
+  Left: 30px;
+  width: 250px;
+  z-index: 999;
+  pointer-events: none;
+}
+
+#gif {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff8fc;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  font-size: 1.2rem;
+  padding: 12px 18px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+
+input {
+  background-color: #fff;
+  border: 2px solid #ffb6c1;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff80ab;
+  box-shadow: 0 0 6px #ffcce6;
+}
+
+button {
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff80ab;
+  transform: scale(1.05);
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
